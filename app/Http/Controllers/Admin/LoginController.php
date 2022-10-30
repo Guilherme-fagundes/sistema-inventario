@@ -9,6 +9,8 @@ class LoginController extends Controller
 {
     public function home()
     {
-        echo 'home';
+        return view('admin.home', [
+            'title' => env('APP_NAME') . ' | Home'
+        ]);
     }
 }
