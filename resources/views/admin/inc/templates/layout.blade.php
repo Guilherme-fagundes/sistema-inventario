@@ -8,6 +8,7 @@
     <script src="{{ url(mix('jquery/jquery.min.js')) }}"></script>
     <script src="{{ url(mix('bootstrap/js/bootstrap.js')) }}"></script>
     <link rel="stylesheet" href="{{ url(mix('admin/css/style.css')) }}"/>
+    <link rel="stylesheet" href="{{ url('admin/icomoon/style.css') }}"/>
 </head>
 <body>
 
@@ -22,7 +23,14 @@
 
                     </div>
                     <div class="leftDashContent">
-                        menu aqui
+                        <ul class="menuLeftDash">
+                            <li class="menuLeftDashItem">
+                                <a href="#" class="d-block text-center">
+                                    <span class="icon icon-home"></span><br>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                        </ul>
 
                     </div>
 

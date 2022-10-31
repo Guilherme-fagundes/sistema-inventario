@@ -6,8 +6,20 @@
   font-family: "open sans", sans-serif;
   font-size: 1em;
 }
-
 .leftSiderBar {
   background-color: #0078ff;
 }
-
+.leftSiderBar .menuLeftDash {
+  list-style: none;
+}
+.leftSiderBar .menuLeftDash .menuLeftDashItem a {
+  text-decoration: none !important;
+  color: #f1f1f1;
+  font-size: 0.9em;
+}
+.leftSiderBar .menuLeftDash .menuLeftDashItem:hover {
+  background-color: white;
+}
+.leftSiderBar .menuLeftDash .menuLeftDashItem:hover a {
+  color: #0078ff;
+}
