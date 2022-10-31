@@ -13,10 +13,8 @@
   list-style: none;
   margin-top: 1em;
 }
-.leftSiderBar .menuLeftDash .menuLeftDashItem {
-  padding: 1em 10px;
-}
 .leftSiderBar .menuLeftDash .menuLeftDashItem a {
+  padding: 1em 10px;
   text-decoration: none !important;
   color: #f1f1f1;
   font-size: 0.9em;
