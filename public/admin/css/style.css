@@ -6,6 +6,10 @@
   font-family: "open sans", sans-serif;
   font-size: 1em;
 }
+
+.main {
+  padding: 0 0;
+}
 .leftSiderBar {
   background-color: #0078ff;
 }
