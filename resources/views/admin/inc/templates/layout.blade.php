@@ -30,6 +30,19 @@
                                     <span>Home</span>
                                 </a>
                             </li>
+                            <li class="menuLeftDashItem">
+                                <a href="#" class="d-block text-center">
+                                    <span class="icon icon-profile"></span><br>
+                                    <span>Perfil</span>
+                                </a>
+                            </li>
+                            <li class="menuLeftDashItem">
+                                <a href="#" class="d-block text-center">
+                                    <span class="icon-price-tags"></span><br>
+                                    <span>Produtos</span>
+                                    
+                                </a>
+                            </li>
                         </ul>
 
                     </div>
@@ -37,6 +50,13 @@
 
                 </div>
 
+            </div>
+            
+            <div class="col-11 offset-1 dashHeaderBar">
+                <div class="dashHeaderBarContent">
+                    
+                </div>
+                
             </div>
 
         </div>

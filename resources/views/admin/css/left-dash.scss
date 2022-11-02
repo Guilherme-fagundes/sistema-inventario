@@ -6,11 +6,14 @@
         .menuLeftDashItem{
             
             a{
-                padding: 1em 10px;
+                display: block;
                 text-decoration: none!important;
                 color: #f1f1f1;
                 font-size: .9em;
+                padding: 1em 10px;
             }
+            
+            
             &:hover{
                 background-color: white;
                
