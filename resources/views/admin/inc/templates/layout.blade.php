@@ -25,13 +25,13 @@
                     <div class="leftDashContent">
                         <ul class="menuLeftDash">
                             <li class="menuLeftDashItem">
-                                <a href="#" class="d-block text-center">
+                                <a href="{{ route('admin.home') }}" class="d-block text-center">
                                     <span class="icon icon-home"></span><br>
                                     <span>Home</span>
                                 </a>
                             </li>
                             <li class="menuLeftDashItem">
-                                <a href="#" class="d-block text-center">
+                                <a href="{{ route('admin.user.profile') }}" class="d-block text-center">
                                     <span class="icon icon-profile"></span><br>
                                     <span>Perfil</span>
                                 </a>
@@ -60,6 +60,11 @@
                         
                     </div>
                 </div>
+                
+            </div>
+            
+            <div class="col-11 offset-1 main">
+                @yield('main')
                 
             </div>
 
