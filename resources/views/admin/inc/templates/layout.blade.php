@@ -54,7 +54,11 @@
             
             <div class="col-11 offset-1 dashHeaderBar">
                 <div class="dashHeaderBarContent">
-                    
+                    <span class="icon-menu text-white"></span>
+                    <div class="dashHeaderBarNav">
+                        <a href="#" class="btn btn-success btn-sm rounded-0 text-white"><span class="icon-exit"></span> sair</a>
+                        
+                    </div>
                 </div>
                 
             </div>

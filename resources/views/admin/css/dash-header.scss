@@ -3,3 +3,18 @@
     Author     : guilherme
 */
 
+.dashHeaderBar{
+    padding: 1em 0;
+    background-color: #0078ff;
+    .dashHeaderBarContent{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            cursor: pointer;
+        }
+    }
+}
+

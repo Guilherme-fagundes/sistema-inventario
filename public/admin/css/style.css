@@ -26,3 +26,21 @@
 .leftSiderBar .menuLeftDash .menuLeftDashItem:hover a {
   color: #0078ff;
 }
+/*
+    Created on : 1 de nov de 2022, 22:26:38
+    Author     : guilherme
+*/
+.dashHeaderBar {
+  padding: 1em 0;
+  background-color: #0078ff;
+}
+.dashHeaderBar .dashHeaderBarContent {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashHeaderBar .dashHeaderBarContent span {
+  cursor: pointer;
+}
