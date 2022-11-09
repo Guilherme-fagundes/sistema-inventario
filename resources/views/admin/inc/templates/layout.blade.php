@@ -20,7 +20,7 @@
 
                 <div class="leftDash">
                     <div class="leftDashHeader">
-
+                        <img src="{{ url('storage/imagens/logo2.png') }}" width="90"/>
                     </div>
                     <div class="leftDashContent">
                         <ul class="menuLeftDash">
