@@ -17,6 +17,7 @@ mix
     .sass('resources/views/admin/css/reset.scss', 'public/admin/css/style.css').version()
     .sass('resources/views/admin/css/left-dash.scss', 'public/admin/css/style.css').version()
     .sass('resources/views/admin/css/dash-header.scss', 'public/admin/css/style.css').version()
+    .sass('resources/views/admin/css/profile.scss', 'public/admin/css/style.css').version()
 
     .js('node_modules/jquery/dist/jquery.min.js', 'public/jquery/jquery.min.js').version()
     .js('node_modules/bootstrap/dist/js/bootstrap.min.js', 'public/bootstrap/js/bootstrap.js').version();

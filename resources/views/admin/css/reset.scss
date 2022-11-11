@@ -2,9 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none!important;
+    outline: 0!important;
+    box-shadow: none!important;
     font-family: 'open sans', sans-serif;
-    font-size: 1em;
+}
+
+//buutons
+.btn{
+    font-size: .8em;
+}
+//forms
+.form-label{
+    color: #888;
+    font-size: .8em;
+
+}
+.form-control:focus{
+    outline: 0!important;
+    font-size: .8em!important;
 }
 
 .main{
