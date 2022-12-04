@@ -38,10 +38,10 @@
                                 </a>
                             </li>
                             <li class="menuLeftDashItem">
-                                <a href="#" class="d-block text-center">
+                                <a href="{{ route('admin.product.index') }}" class="d-block text-center">
                                     <span class="icon-price-tags"></span><br>
                                     <span>Produtos</span>
-                                    
+
                                 </a>
                             </li>
                         </ul>
@@ -52,21 +52,21 @@
                 </div>
 
             </div>
-            
+
             <div class="col-11 offset-1 dashHeaderBar">
                 <div class="dashHeaderBarContent">
                     <span class="icon-menu text-white"></span>
                     <div class="dashHeaderBarNav">
                         <a href="#" class="btn btn-success btn-sm rounded-0 text-white"><span class="icon-exit"></span> sair</a>
-                        
+
                     </div>
                 </div>
-                
+
             </div>
-            
+
             <div class="col-11 offset-1 main">
                 @yield('main')
-                
+
             </div>
 
         </div>

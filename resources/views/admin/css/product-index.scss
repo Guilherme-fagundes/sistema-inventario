@@ -1,0 +1,33 @@
+.sessProduct{
+    width: 95%;
+    margin: 0 auto;
+
+    .product-header{
+        margin: 1em 0;
+        border-bottom: 2px solid #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3{
+            color: #333;
+            font-weight: 100;
+        }
+    }
+
+    .product-content{
+        padding: 1em 0;
+        .product-result{
+            .product-result-header{
+                margin-bottom: 1em;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .product-result-title{
+                    font-size: .8em;
+                    color: #333;
+                }
+            }
+        }
+    }
+}

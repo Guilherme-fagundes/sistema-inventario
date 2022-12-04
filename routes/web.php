@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LoginController::class, 'home'])->name('admin.home');
 Route::get('/perfil', [UserController::class, 'profile'])->name('admin.user.profile');
+
+//rotas de produtos
+Route::get('/produtos', [ProductController::class, 'index'])->name('admin.product.index');
