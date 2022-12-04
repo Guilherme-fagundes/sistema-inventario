@@ -25,3 +25,14 @@
 .main{
     padding: 0 0;
 }
+
+.table{
+    font-size: .8em;
+    thead{
+        tr{
+            th{
+                font-weight: 600;
+            }
+        }
+    }
+}
