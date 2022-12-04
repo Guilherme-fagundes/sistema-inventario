@@ -13,4 +13,11 @@ class ProductController extends Controller
             'title' => env('APP_NAME') . ' | Produtos'
         ]);
     }
+
+    public function novo()
+    {
+        return view('admin.produto.novo', [
+            'title' => env('APP_NAME'). ' | Cadastrar novo produto'
+        ]);
+    }
 }
