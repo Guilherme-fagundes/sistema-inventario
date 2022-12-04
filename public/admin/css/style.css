@@ -77,3 +77,31 @@
 .sessProfile .profile-content .alteraSenhaPerfil {
   margin: 1.3em 0;
 }
+.sessProduct {
+  width: 95%;
+  margin: 0 auto;
+}
+.sessProduct .product-header {
+  margin: 1em 0;
+  border-bottom: 2px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sessProduct .product-header h3 {
+  color: #333;
+  font-weight: 100;
+}
+.sessProduct .product-content {
+  padding: 1em 0;
+}
+.sessProduct .product-content .product-result .product-result-header {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sessProduct .product-content .product-result .product-result-header .product-result-title {
+  font-size: 0.8em;
+  color: #333;
+}
