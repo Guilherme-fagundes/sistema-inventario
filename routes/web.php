@@ -21,4 +21,4 @@ Route::get('/perfil', [UserController::class, 'profile'])->name('admin.user.prof
 
 //rotas de produtos
 Route::get('/produtos', [ProductController::class, 'index'])->name('admin.product.index');
-Route::get('/produtos/cadastrar-novo', [ProductController::class, 'novo']);
+Route::get('/produtos/cadastrar-novo', [ProductController::class, 'novo'])->name('admin.product.new');

@@ -111,3 +111,9 @@
   font-size: 0.8em;
   color: #333;
 }
+.sessProduct .product-new-content .create-new-product .create-new-product-header {
+  margin: 1.5em 0;
+}
+.sessProduct .product-new-content .create-new-product .create-new-product-header .create-product-title {
+  font-size: 0.8em;
+}

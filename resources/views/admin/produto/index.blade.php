@@ -5,7 +5,7 @@
     <div class="py-2 product-header">
         <h3><span class="icon-price-tag"></span> produtos</h3>
 
-        <a href="#" class="btn btn-outline-success btn-sm"><span class="icon icon-plus"></span> Cadastrar novo</a>
+        <a href="{{ route('admin.product.new') }}" class="btn btn-outline-success btn-sm"><span class="icon icon-plus"></span> Cadastrar novo</a>
 
     </div>
 
