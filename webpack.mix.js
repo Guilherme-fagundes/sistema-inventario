@@ -22,5 +22,6 @@ mix
     .sass('resources/views/admin/css/produto-novo.scss', 'public/admin/css/style.css').version()
 
     .js('node_modules/jquery/dist/jquery.min.js', 'public/jquery/jquery.min.js').version()
-    .js('node_modules/bootstrap/dist/js/bootstrap.min.js', 'public/bootstrap/js/bootstrap.js').version();
+    .js('node_modules/bootstrap/dist/js/bootstrap.min.js', 'public/bootstrap/js/bootstrap.js').version()
+    .js('resources/views/admin/js/jmask-input.js', 'public/admin/js/jmask.js').version();
 

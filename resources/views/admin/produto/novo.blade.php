@@ -37,7 +37,7 @@
 
                             <div class="col">
                                 <label class="form-label">Valor unitário</label>
-                                <input class="form-control" type="text" name="value-unit" placeholder="Informe o valor unitario do produto"/>
+                                <input class="form-control val-unitario" type="text" name="value-unit" placeholder="Informe o valor unitario do produto"/>
 
                             </div>
 

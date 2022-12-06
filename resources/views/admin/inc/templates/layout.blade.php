@@ -6,8 +6,9 @@
     <title>{{ $title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url(mix('bootstrap/css/bootstrap.css')) }}"/>
-    <script src="{{ url(mix('jquery/jquery.min.js')) }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="{{ url(mix('bootstrap/js/bootstrap.js')) }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
     <link rel="stylesheet" href="{{ url(mix('admin/css/style.css')) }}"/>
     <link rel="stylesheet" href="{{ url('admin/icomoon/style.css') }}"/>
 </head>
@@ -75,6 +76,6 @@
 
   </section>
 
-
+<script src="{{ url(mix('admin/js/jmask.js')) }}"></script>
 </body>
 </html>
