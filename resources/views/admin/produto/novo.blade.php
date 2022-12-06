@@ -18,7 +18,8 @@
 
             <div class="create-new-product-content">
 
-                <form class="form-create-new-product">
+                <form class="form-create-new-product" method="POST" action="{{ route('admin.product.new.post') }}">
+                    @csrf
                     <div class="mb-3">
                         <div class="row mb-3">
                             <div class="col">
@@ -37,7 +38,7 @@
 
                             <div class="col">
                                 <label class="form-label">Valor unitário</label>
-                                <input class="form-control val-unitario" type="text" name="value-unit" placeholder="Informe o valor unitario do produto"/>
+                                <input class="form-control val-unitario" type="text" name="value_unit" placeholder="Informe o valor unitario do produto"/>
 
                             </div>
 
