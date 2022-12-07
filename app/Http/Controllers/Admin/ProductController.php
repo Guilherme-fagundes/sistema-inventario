@@ -28,6 +28,12 @@ class ProductController extends Controller
 
             $request->value_unit = Formatter::jmaskToDecimal($request->value_unit);
 
+            if(in_array('' ,$request->all())){
+                return redirect()->back()->withErrors(['error', 'Preencha todos os campos']);
+
+
+            }
+
         }
 
     }
