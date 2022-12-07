@@ -27,7 +27,7 @@ class ProductController extends Controller
         if($request->all()){
 
             $request->value_unit = Formatter::jmaskToDecimal($request->value_unit);
-            dd($request->value_unit);
+
         }
 
     }
