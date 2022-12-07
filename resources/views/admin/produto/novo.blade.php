@@ -43,7 +43,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label class="form-label">produto</label>
-                                <input class="form-control" type="text" name="product"
+                                <input class="form-control" type="text" name="description"
                                     placeholder="Informe a descrição/nome do produto" />
 
                             </div>

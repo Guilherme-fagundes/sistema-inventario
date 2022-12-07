@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use DB;
 use App\Helpers\Formatter;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
@@ -33,6 +35,21 @@ class ProductController extends Controller
 
 
             }
+
+            $createProduct = new \App\Models\Product();
+            $createProduct->description = $request->description;
+            $createProduct->quantity = $request->quantity;
+            $createProduct->value_unit = $request->value_unit;
+
+            $createProduct->save();
+            $lastInserId = $createProduct->id;
+
+            if(!$lastInserId){
+                Log::emergency("Erro ao cadastrar produto");
+            }else{
+                Log::debug("Produto cadastrado em: ". date('Y-m-d H:i:s'. " - Produto ID: ". $lastInserId));
+            }
+            return redirect()->back()->withErrors(['success', 'Produto cadastrado com sucesso']);
 
         }
 
