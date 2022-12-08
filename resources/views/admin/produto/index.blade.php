@@ -52,7 +52,9 @@
                         </tr>
 
                     </tbody>
+
                 </table>
+                {{ $products->links() }}
 
             </div>
 
