@@ -36,16 +36,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td scope="row">1</td>
-                            <td>Nescau</td>
-                            <td>126</td>
-                            <td>RS 5,28</td>
-                            <td>R$ 665,28</td>
-                        </tr>
-                        <tr>
+                        @foreach ($products as $product)
+                            <tr>
+                                <td>{{ $product->reference_code }}</td>
+                                <td>{{ $product->description }}</td>
+                                <td>{{ $product->quantity }}</td>
+                                <td>RS {{ App\Helpers\Formatter::number($product->value_unit) }}</td>
+                                <td>R$ {{ App\Helpers\Formatter::number($product->parcial_value) }}</td>
+                            </tr>
+
+                        @endforeach
+                        <tr class="bg-primary text-white">
                             <td colspan="4">Valor Total</td>
-                            <td>R$ 6000,00</td>
+                            <td>{{ App\Helpers\Formatter::number($totalParcial) }}</td>
                         </tr>
 
                     </tbody>

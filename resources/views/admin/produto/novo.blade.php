@@ -47,9 +47,16 @@
                                     placeholder="Informe a descrição/nome do produto" />
 
                             </div>
+                            <div class="col">
+                                <label class="form-label">Código de referencia (Opsional)</label>
+                                <input class="form-control" type="text" name="reference_code"
+                                    placeholder="Informe o código de referencia" />
+
+                            </div>
                         </div>
 
                         <div class="row mb-3">
+
                             <div class="col">
                                 <label class="form-label">Quantidade</label>
                                 <input class="form-control" type="number" name="quantity"

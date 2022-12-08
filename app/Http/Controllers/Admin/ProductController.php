@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use DB;
 use App\Helpers\Formatter;
+use App\Helpers\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
@@ -12,8 +13,15 @@ class ProductController extends Controller
 {
     public function index()
     {
+
+        $readproduct = DB::table('products')->get();
+        $totalParcial = $readproduct->sum('parcial_value');
+
+
         return view('admin.produto.index', [
-            'title' => env('APP_NAME') . ' | Produtos'
+            'title' => env('APP_NAME') . ' | Produtos',
+            'products' => $readproduct,
+            'totalParcial' => $totalParcial
         ]);
     }
 
@@ -26,6 +34,7 @@ class ProductController extends Controller
 
     public function novoPost(Request $request)
     {
+
         if($request->all()){
 
             $request->value_unit = Formatter::jmaskToDecimal($request->value_unit);
@@ -37,9 +46,11 @@ class ProductController extends Controller
             }
 
             $createProduct = new \App\Models\Product();
+            $createProduct->reference_code = ($request->reference_code ? $request->reference_code : 'Não informado');
             $createProduct->description = $request->description;
             $createProduct->quantity = $request->quantity;
             $createProduct->value_unit = $request->value_unit;
+            $createProduct->parcial_value = $request->quantity * $request->value_unit;
 
             $createProduct->save();
             $lastInserId = $createProduct->id;
@@ -52,6 +63,5 @@ class ProductController extends Controller
             return redirect()->back()->withErrors(['success', 'Produto cadastrado com sucesso']);
 
         }
-
     }
 }

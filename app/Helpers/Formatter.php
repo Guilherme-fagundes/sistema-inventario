@@ -27,4 +27,17 @@ class Formatter
         $data = null;
         $value = null;
     }
+
+    /**
+     * number
+     * Formata valores float para reais
+     * EX: 19.9 => R$ 19,90
+     *
+     * @param  float $price
+     * @return string
+     */
+    public static function number(float $price): string
+    {
+        return number_format($price, 2, ',', '.');
+    }
 }

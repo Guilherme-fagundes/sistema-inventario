@@ -16,9 +16,12 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string('reference_code')->nullable();
             $table->string('description', 150);
             $table->integer('quantity');
             $table->float('value_unit');
+            $table->float('parcial_value');
+
 
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->nullable()->default(DB::raw('NULL ON UPDATE CURRENT_TIMESTAMP'));
