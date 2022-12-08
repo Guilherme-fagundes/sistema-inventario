@@ -23,11 +23,11 @@
                     @if($errors->all())
                         @if($errors->all()[0] == 'error')
                             <div class="alert alert-warning" role="alert">
-                                {{ $errors->all()[1] }}
+                                <span class="icon icon-cross"></span> {{ $errors->all()[1] }}
                             </div>
                         @else
                             <div class="alert alert-success" role="alert">
-                                {{ $errors->all()[1] }}
+                                <span class="icon icon-checkmark"></span> {{ $errors->all()[1] }}
                             </div>
                         @endif
                     @endif

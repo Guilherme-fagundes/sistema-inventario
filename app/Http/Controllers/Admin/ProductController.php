@@ -14,7 +14,7 @@ class ProductController extends Controller
     public function index()
     {
 
-        $readproduct = DB::table('products')->paginate(3);
+        $readproduct = DB::table('products')->paginate(10);
         $totalParcial = $readproduct->sum('parcial_value');
 
 
