@@ -30,6 +30,10 @@
 .table thead tr th {
   font-weight: 600;
 }
+
+.pagination {
+  font-size: 0.8em;
+}
 .leftSiderBar {
   background-color: #0078ff;
 }
