@@ -15,7 +15,7 @@
             <div class="product-result-header">
                 <p class="product-result-title">Relação dos ultimos produtos cadastrados</p>
                 <div class="product-result-header-options">
-                    <a href="#" title="Exportar como PDF" class="btn btn-warning"><span
+                    <a href="{{ route('admin.products.export-pdf') }}" title="Exportar como PDF" class="btn btn-warning"><span
                             class="icon icon-file-pdf"></span></a>
 
                 </div>

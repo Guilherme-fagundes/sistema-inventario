@@ -23,3 +23,4 @@ Route::get('/perfil', [UserController::class, 'profile'])->name('admin.user.prof
 Route::get('/produtos', [ProductController::class, 'index'])->name('admin.product.index');
 Route::get('/produtos/cadastrar-novo', [ProductController::class, 'novo'])->name('admin.product.new');
 Route::post('/produtos/cadastrar-novo/post', [ProductController::class, 'novoPost'])->name('admin.product.new.post');
+Route::get('/produtos/exportar-pdf', [ProductController::class, 'exportPdf'])->name('admin.products.export-pdf');
