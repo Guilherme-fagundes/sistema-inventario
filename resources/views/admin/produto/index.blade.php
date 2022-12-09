@@ -13,9 +13,9 @@
 
         <div class="product-result">
             <div class="product-result-header">
-                <p class="product-result-title">Relação dos ultimos produtos cadastrados</p>
+                <p class="product-result-title">Estoque existente em: 31/12/{{ date('Y') }}</p>
                 <div class="product-result-header-options">
-                    <a href="{{ route('admin.products.export-pdf') }}" title="Exportar como PDF" class="btn btn-warning"><span
+                    <a href="{{ route('admin.products.export-pdf') }}" target="_blank" title="Exportar como PDF" class="btn btn-warning"><span
                             class="icon icon-file-pdf"></span></a>
 
                 </div>

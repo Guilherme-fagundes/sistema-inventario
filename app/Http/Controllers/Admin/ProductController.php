@@ -8,6 +8,8 @@ use App\Helpers\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
+use App\Models\Product;
+use Barryvdh\DomPDF\PDF;
 
 class ProductController extends Controller
 {
@@ -67,6 +69,9 @@ class ProductController extends Controller
 
     public function exportPdf()
     {
+        $products = Product::all();
 
+        return \PDF::loadView('admin.produto.export-pdf', compact('products'))
+                ->setPaper('A4')->stream('Estoque-existente-'.date('d-m-Y').'.PDF');
     }
 }
