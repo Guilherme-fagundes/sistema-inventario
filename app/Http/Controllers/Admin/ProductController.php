@@ -70,8 +70,9 @@ class ProductController extends Controller
     public function exportPdf()
     {
         $products = Product::all();
+        $totalParcial = $products->sum('parcial_value');
 
-        return \PDF::loadView('admin.produto.export-pdf', compact('products'))
+        return \PDF::loadView('admin.produto.export-pdf', compact('products', 'totalParcial'))
                 ->setPaper('A4')->stream('Estoque-existente-'.date('d-m-Y').'.PDF');
     }
 }

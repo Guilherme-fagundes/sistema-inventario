@@ -78,6 +78,11 @@
 
             @endforeach
 
+            <tr class="bg-primary text-white">
+                <td colspan="4">Valor Total</td>
+                <td>{{ App\Helpers\Formatter::number($totalParcial) }}</td>
+            </tr>
+
         </tbody>
 
     </table>
